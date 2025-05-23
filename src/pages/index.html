@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="../styles/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template electron app</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Escolar</title>
 </head>
 <body>
 
-    <h1>tudo meu nada seu</h1>
+  <header class="header">
+    <h1>Sistema Escolar</h1>
+    <p>Cadastro de Alunos</p>
+  </header>
 
-    <script src="../js/script.js"></script>
+  <div class="container">
+    <div class="card">
+      <h2>Cadastrar Aluno</h2>
 
-    <img src="download.jpg" alt="">
-</body>
-</html>
+      <form id="form-produto">
+        <label for="nome-produto">Nome do Aluno</label>
+        <input type="text" id="nome-produto" class="form-input" placeholder="Nome do aluno" required>
+
+        <label for="quantidade-produto">Matrícula</label>
+        <input type="text" id="quantidade-produto" class="form-input" placeholder="Matrícula" required>
+
+        <label for="imagem-produto">Telefone</label>
+        <input type="tel" id="imagem-produto" class="form-input" placeholder="Telefone" required>
+
+        <div class="form-footer">
+          <button id="submit" class="button-success">Cadastrar</button>
+          <a href="index.html" class="button-back">Voltar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+    
+  </body>
